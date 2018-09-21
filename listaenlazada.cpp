@@ -1,12 +1,18 @@
 #include "listaenlazada.h"
 
 using namespace std;
+
 ListaEnlazada::ListaEnlazada()
 {
-    this->lista=0;
+    this->lista->elemento=0;
 }
 
-void ListaEnlazada::insertarInicio(int valor)
+ListaEnlazada::ListaEnlazada(int valor)
+{
+    this->lista->elemento=valor;   //Aquí tenías lista igualado al valor y eso era Nodo = int, es decir, error
+}
+template<class generico>
+void ListaEnlazada::insertarInicio(generico valor)   //Le deje los template solo a los que los usan
 {
     Tlista q;
     q = new(struct nodo);
@@ -14,7 +20,8 @@ void ListaEnlazada::insertarInicio(int valor)
     q->sgte = this->lista;
     this->lista  = q;
 }
-void ListaEnlazada::insertarFinal( int valor)
+template<class generico>
+void ListaEnlazada::insertarFinal( generico valor)
 {
     Tlista t, q = new(struct nodo);
 
@@ -37,8 +44,8 @@ void ListaEnlazada::insertarFinal( int valor)
 
 }
 
-
-void ListaEnlazada::insertarElemento( int valor, int pos)
+template<class generico>
+void ListaEnlazada::insertarElemento( generico valor, int pos)
 {
     Tlista q, t;
     int i;
@@ -76,6 +83,7 @@ int ListaEnlazada::getDimension()
     }
     return i;
 }
+
 void ListaEnlazada::imprimirLista( )
 {
      int i = -1;

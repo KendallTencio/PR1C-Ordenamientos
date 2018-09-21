@@ -26,7 +26,8 @@ SOURCES += \
     objetoprueba.cpp \
     radixsort.cpp \
     binsort.cpp \
-    mergesort.cpp
+    mergesort.cpp \
+    listaenlazada.cpp
 
 HEADERS += \
     bubblesort.h \
@@ -38,4 +39,5 @@ HEADERS += \
     heapsort.h \
     binsort.h \
     radixsort.h \
-    mergesort.h
+    mergesort.h \
+    listaenlazada.h

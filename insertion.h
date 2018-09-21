@@ -6,7 +6,6 @@ class InsertionSort
     int x = 0;
     int vectorIS[20];
   public:
-   // template <class T>
     InsertionSort();
     template <class T>
     void Insertion_sort(T* vectorIS);
