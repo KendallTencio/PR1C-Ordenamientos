@@ -12,7 +12,7 @@
 //#include "binsort.cpp"
 #include "objetoprueba.cpp"
 using namespace std;
-
+#include "listaenlazada.h"
 //Este código es una modificación del original en lwh.free.fr
 
 /*
