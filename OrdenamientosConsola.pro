@@ -15,4 +15,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+    bubblesort.cpp \
+    insertion.cpp \
+    selection.cpp \
+    shell.cpp \
+    quicksort.cpp \
+    bi_bubblesort.cpp \
+    heapsort.cpp \
+    objetoprueba.cpp \
+    radixsort.cpp \
+    binsort.cpp \
+    mergesort.cpp
+
+HEADERS += \
+    bubblesort.h \
+    insertion.h \
+    bi_bubblesort.h \
+    quicksort.h \
+    shell.h \
+    selection.h \
+    heapsort.h \
+    binsort.h \
+    radixsort.h \
+    mergesort.h

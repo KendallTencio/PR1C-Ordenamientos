@@ -2,10 +2,14 @@
 #define BINSORT_H
 
 
-class binsort
+class BinSort
 {
+private:
+    int* data;
+    int count;
 public:
-    binsort();
+    BinSort();
+    void binsort(int* data, int count);
 };
 
 #endif // BINSORT_H
