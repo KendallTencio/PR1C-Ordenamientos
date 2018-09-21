@@ -5,11 +5,13 @@ using namespace std;
 ListaEnlazada::ListaEnlazada()
 {
     this->lista->elemento=0;
+    this->lista->sgte=0;
 }
 
 ListaEnlazada::ListaEnlazada(int valor)
 {
     this->lista->elemento=valor;   //Aquí tenías lista igualado al valor y eso era Nodo = int, es decir, error
+    this->lista->sgte=0;
 }
 template<class generico>
 void ListaEnlazada::insertarInicio(generico valor)   //Le deje los template solo a los que los usan

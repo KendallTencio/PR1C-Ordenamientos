@@ -150,7 +150,8 @@ int main(){
    // binsortPrueba.binsort(vector, 20);
     cout<<"Lista ordenada con el BinSort: "<<endl;
     imprimir (vector);
-
+    ListaEnlazada a(1);
+    a.imprimirLista();
     return 0;
 }
 
