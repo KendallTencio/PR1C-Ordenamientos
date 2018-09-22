@@ -10,9 +10,11 @@
 #include "quicksort.cpp"
 #include "heapsort.cpp"
 //#include "binsort.cpp"
+#include "mergesort.cpp"
 #include "objetoprueba.cpp"
-using namespace std;
 #include "listaenlazada.h"
+using namespace std;
+
 //Este código es una modificación del original en lwh.free.fr
 
 /*
@@ -137,6 +139,21 @@ int main(){
     cout<<"Lista ordenada con el HeapSort: "<<endl;
     imprimir (vector);
 
+
+    //------------------MergeSort-------------------------------------------------------------------
+    MergeSort mergesortPrueba;
+    for (i = 0; i<19; i++)
+    {
+        vector[i] = (1 + rand() % 100);
+    }
+
+    cout<<"\n\nLista desordenada con el MergeSort: "<<endl;
+    imprimir(vector);
+    //NO IMPLEMENTADO AÚN
+    mergesortPrueba.mergesorting(vector, 0, 0);
+    cout<<"Lista ordenada con el MergeSort: "<<endl;
+    imprimir (vector);
+
     //------------------BinSort-------------------------------------------------------------------
     //BinSort binsortPrueba;
     for (i = 0; i<19; i++)
@@ -154,6 +171,8 @@ int main(){
     a.imprimirLista();
     return 0;
 }
+
+
 
 template <class T>
 void imprimir(T vector[])
