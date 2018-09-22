@@ -13,6 +13,6 @@ class ShellSort
     void shell(T* vector);
     template <class T>
     void auxShell(T* vectorSHS, int gap, int debut);
-
+    ~ShellSort();
 };
 #endif // SHELL_H

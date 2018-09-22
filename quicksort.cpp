@@ -25,3 +25,8 @@ void QuickSort::quickSort( T * vector , int tamanio ) {
     quickSort( vector , muro - 1 ) ;
     quickSort( vector + muro - 1 , tamanio- muro + 1 ) ;
 }
+
+QuickSort::~QuickSort()
+{
+
+}

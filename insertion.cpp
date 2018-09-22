@@ -18,3 +18,8 @@ void InsertionSort::Insertion_sort(T* vectorIS)
         vectorIS[j] = actual;
     }
 }
+
+InsertionSort::~InsertionSort()
+{
+
+}

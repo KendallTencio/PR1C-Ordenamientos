@@ -14,6 +14,7 @@ public:
     void countSort(T *arr[], int n, int exp);
      template <class T>
     int getMax(T *arr[], int n);
+    ~RadixSort();
 };
 
 #endif // RADIXSORT_H

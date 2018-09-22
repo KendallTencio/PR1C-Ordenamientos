@@ -2,7 +2,7 @@
 //Código extraído y modificado de la página: https://www.geeksforgeeks.org/merge-sort/
 
 
-/*MergeSort::MergeSort()
+MergeSort::MergeSort()
 {
     x = 0;
 }
@@ -82,4 +82,9 @@ void MergeSort::merge(T *arr, int l, int m, int r)
         j++;
         k++;
     }
+}
+
+MergeSort::~MergeSort()
+{
+
 }

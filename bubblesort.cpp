@@ -26,3 +26,8 @@ void BubbleSort::bubble_sort(T* vectorBS)
         }
 
     }
+
+BubbleSort::~BubbleSort()
+{
+
+}

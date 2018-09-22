@@ -10,6 +10,7 @@ class QuickSort
     QuickSort();
     template <class T>
     void quickSort(T * vectorQS, int size);
+    ~QuickSort();
 };
 
 #endif // QUICKSORT_H
