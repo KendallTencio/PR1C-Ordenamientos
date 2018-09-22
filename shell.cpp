@@ -25,3 +25,8 @@ void ShellSort::shell(T* vector)
             auxShell(vector,intervalles[ngap],i);
     }
 }
+
+ShellSort::~ShellSort()
+{
+
+}

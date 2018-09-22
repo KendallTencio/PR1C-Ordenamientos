@@ -31,3 +31,7 @@ void HeapSort::heapsort(T arr, int n, int i)
     }
 }
 
+HeapSort::~HeapSort()
+{
+
+}

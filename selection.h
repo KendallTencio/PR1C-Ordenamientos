@@ -11,5 +11,6 @@ class SelectionSort
     SelectionSort();
     template <class T>
     void selection(T* vectorSS, int tamanio);
+    ~SelectionSort();
 };
 #endif // SELECTION_H

@@ -12,6 +12,7 @@ class HeapSort
     HeapSort();
     template <class T>
     void heapsort(T vectorHS, int n, int i);
+    ~HeapSort();
 };
 
 #endif // HEAPSORT_H

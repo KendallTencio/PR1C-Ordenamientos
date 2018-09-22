@@ -10,5 +10,6 @@ class BIBubbleSort
     BIBubbleSort();
     template <typename T>
     void bubbleBi_sort(T* vectorBIBS);
+    ~BIBubbleSort();
 };
 #endif // BI_BUBBLESORT_H

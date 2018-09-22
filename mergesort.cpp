@@ -85,3 +85,8 @@ void MergeSort::merge(T *arr, int l, int m, int r)
         k++;
     }
 }
+
+MergeSort::~MergeSort()
+{
+
+}

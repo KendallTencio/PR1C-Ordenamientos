@@ -21,3 +21,8 @@ void SelectionSort::selection(T *vector, int taille)
           vector[plus_petit] = temp;
      }
 }
+
+SelectionSort::~SelectionSort()
+{
+
+}

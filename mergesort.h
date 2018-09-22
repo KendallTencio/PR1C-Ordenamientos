@@ -12,6 +12,7 @@ public:
     void mergesorting(T *vectorMS, int l, int r);
     template <class T>
     void merge(T *vectorMS, int l, int m, int r);
+    ~MergeSort();
 };
 
 #endif // MERGESORT_H

@@ -1,86 +1,70 @@
-//Fuente en C: http://es.wikipedia.org/wiki/Ordenamiento_Radix
-//Modificado a C++ : sAfOrAs
+//Modificado de : https://www.geeksforgeeks.org/radix-sort/
 
 #include <math.h>
-#define NUMELTS 20
+#include "radixsort.h"
 
-void radixsort(int x[], int n)
+RadixSort::RadixSort()
 {
-    int front[10], rear[10];
 
-    struct {
-        int info;
-        int next;
-    } node[NUMELTS];
+}
 
-    int exp, first, i, j, k, p, q, y;
+// The main function to that sorts arr[] of size n using
+// Radix Sort
+template <class T>
+void RadixSort::radixsort(int arr[], int n)
+{
+    // Find the maximum number to know number of digits
+    int m = getMax(arr, n);
 
-  /* Inicializar una lista vinculada */
-    for (i = 0; i < n-1; i++)
-    {
-        node[i].info = x[i];
-        node[i].next = i+1;
-    } /* fin del for */
+    // Do counting sort for every digit. Note that instead
+    // of passing digit number, exp is passed. exp is 10^i
+    // where i is current digit number
+    for (int exp = 1; m/exp > 0; exp *= 10)
+        countSort(arr, n, exp);
+}
 
-    node[n-1].info = x[n-1];
-    node[n-1].next = -1;
-    first = 0; /* first es la cabeza de la lista vinculada */
+// A utility function to get maximum value in arr[]
+template <class T>
+int RadixSort::getMax(int arr[], int n)
+{
+    int mx = arr[0];
+    for (int i = 1; i < n; i++)
+        if (arr[i] > mx)
+            mx = arr[i];
+    return mx;
+}
 
-    for (k = 1; k < 5; k++)
-    {
-    /* Suponer que tenemos números de cuatro dígitos */
-        for (i = 0; i < 10; i++)
-        {
-        /*Inicializar colas */
-            rear[i] = -1;
-            front[i] = -1;
-        } /*fin del for */
+// A function to do counting sort of arr[] according to
+// the digit represented by exp.
+template <class T>
+void RadixSort::countSort(int arr[], int n, int exp)
+{
+    int output[n]; // output array
+    int i, count[10] = {0};
 
-        /* Procesar cada elemento en la lista */
-        while (first != -1)
-        {
-            p = first;
-            first = node[first].next;
-            y = node[p].info;
-            /* Extraer el kâsimo dÁgito */
-            exp = pow(10, k-1); /* elevar 10 a la (k-1)ésima potencia */
-            j = (y/exp) % 10;
-            /* Insertar y en queue[j] */
-            q = rear[j];
-            if (q == -1)
-                front[j] = p;
-            else
-                node[q].next = p;
-            rear[j] = p;
-        } /*fin del while */
-
-        /* En este punto, cada registro está en su cola basándose en el dígito k
-           Ahora formar una lista única de todos los elementos de la cola.
-           Encontrar el primer elemento. */
-        for (j = 0; j < 10 && front[j] == -1; j++);
-            ;
-        first = front[j];
-
-        /* Vincular las colas restantes */
-        while (j <= 9)
-        {   /* Verificar si se ha terminado */
-            /*Encontrar el elemento siguiente */
-            for (i = j+1; i < 10 && front[i] == -1; i++);
-                ;
-            if (i <= 9)
-            {
-                p = i;
-                node[rear[j]].next = front[i];
-            } /* fin del if */
-            j = i;
-        } /* fin del while */
-        node[rear[p]].next = -1;
-    } /* fin del for */
-
-    /* Copiar de regreso al archivo original */
+    // Store count of occurrences in count[]
     for (i = 0; i < n; i++)
+        count[ (arr[i]/exp)%10 ]++;
+
+    // Change count[i] so that count[i] now contains actual
+    //  position of this digit in output[]
+    for (i = 1; i < 10; i++)
+        count[i] += count[i - 1];
+
+    // Build the output array
+    for (i = n - 1; i >= 0; i--)
     {
-            x[i] = node[first].info;
-            first = node[first].next;
-    } /*fin del for */
-} /* fin de radixsort*/
+        output[count[ (arr[i]/exp)%10 ] - 1] = arr[i];
+        count[ (arr[i]/exp)%10 ]--;
+    }
+
+    // Copy the output array to arr[], so that arr[] now
+    // contains sorted numbers according to current digit
+    for (i = 0; i < n; i++)
+        arr[i] = output[i];
+}
+
+RadixSort::~RadixSort()
+{
+
+}

@@ -10,6 +10,7 @@ private:
 public:
     BinSort();
     void binsort(int* data, int count);
+    ~BinSort();
 };
 
 #endif // BINSORT_H

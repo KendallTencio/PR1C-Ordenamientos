@@ -11,5 +11,6 @@ class BubbleSort
     BubbleSort();
     template <typename T>
     void bubble_sort(T* vectorBS);
+    ~BubbleSort();
 };
 #endif // BUBBLESORT_H

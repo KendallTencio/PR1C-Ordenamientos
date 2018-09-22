@@ -9,5 +9,6 @@ class InsertionSort
     InsertionSort();
     template <class T>
     void Insertion_sort(T* vectorIS);
+    ~InsertionSort();
 };
 #endif // INSERTION_H
