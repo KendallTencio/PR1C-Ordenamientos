@@ -6,7 +6,7 @@ MergeSort::MergeSort()
 {
     x = 0;
 }
-*/
+
 /* l is for left index and r is right index of the
    sub-array of arr to be sorted */
 template <class T>
