@@ -1,20 +1,20 @@
 #include "listaenlazada.h"
 
 using namespace std;
-
-ListaEnlazada::ListaEnlazada()
+template<class generico>
+ListaEnlazada<generico>::ListaEnlazada()
 {
     this->lista->elemento=0;
     this->lista->sgte=0;
 }
-
-ListaEnlazada::ListaEnlazada(int valor)
+template<class generico>
+ListaEnlazada<generico>::ListaEnlazada(int valor)
 {
     this->lista->elemento=valor;   //Aquí tenías lista igualado al valor y eso era Nodo = int, es decir, error
     this->lista->sgte=0;
 }
 template<class generico>
-void ListaEnlazada::insertarInicio(generico valor)   //Le deje los template solo a los que los usan
+void ListaEnlazada<generico>::insertarInicio(generico valor)   //Le deje los template solo a los que los usan
 {
     Tlista q;
     q = new(struct nodo);
@@ -23,7 +23,7 @@ void ListaEnlazada::insertarInicio(generico valor)   //Le deje los template solo
     this->lista  = q;
 }
 template<class generico>
-void ListaEnlazada::insertarFinal( generico valor)
+void ListaEnlazada<generico>::insertarFinal( generico valor)
 {
     Tlista t, q = new(struct nodo);
 
@@ -47,7 +47,7 @@ void ListaEnlazada::insertarFinal( generico valor)
 }
 
 template<class generico>
-void ListaEnlazada::insertarElemento( generico valor, int pos)
+void ListaEnlazada<generico>::insertarElemento( generico valor, int pos)
 {
     Tlista q, t;
     int i;
@@ -76,7 +76,8 @@ void ListaEnlazada::insertarElemento( generico valor, int pos)
     }
 
 }
-int ListaEnlazada::getDimension()
+template<class generico>
+int ListaEnlazada<generico>::getDimension()
 {   int i=0;
     while(lista != NULL)
     {
@@ -85,8 +86,8 @@ int ListaEnlazada::getDimension()
     }
     return i;
 }
-
-void ListaEnlazada::imprimirLista( )
+template<class generico>
+void ListaEnlazada<generico>::imprimirLista( )
 {
      int i = -1;
 
