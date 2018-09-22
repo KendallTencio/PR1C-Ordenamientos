@@ -1,7 +1,5 @@
 #ifndef MERGESORT_H
 #define MERGESORT_H
-//#include<stdlib.h>
-//#include<stdio.h>
 
 class MergeSort
 {

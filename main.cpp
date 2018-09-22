@@ -11,7 +11,7 @@
 #include "quicksort.cpp"
 #include "heapsort.cpp"
 //#include "binsort.cpp"
-#include "mergesort.cpp"
+#include "mergesort.h"
 #include "objetoprueba.cpp"
 
 
