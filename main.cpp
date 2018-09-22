@@ -13,10 +13,8 @@
 //#include "binsort.cpp"
 #include "mergesort.cpp"
 #include "objetoprueba.cpp"
-<<<<<<< HEAD
-#include "listaenlazada.h"
-=======
->>>>>>> bf9ec138706910c88c591c62567c642402025d86
+
+
 using namespace std;
 
 //Este código es una modificación del original en lwh.free.fr
