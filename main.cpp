@@ -1,3 +1,4 @@
+
 #include <QCoreApplication>
 #include <iostream>
 #include <cstdlib>
@@ -12,7 +13,7 @@
 //#include "binsort.cpp"
 #include "objetoprueba.cpp"
 using namespace std;
-#include "listaenlazada.cpp"
+
 //Este código es una modificación del original en lwh.free.fr
 
 /*
@@ -30,6 +31,7 @@ using namespace std;
 */
 
 //Prototipos
+
 template <class T>
 void imprimir(T* vector);
 
@@ -150,11 +152,7 @@ int main(){
    // binsortPrueba.binsort(vector, 20);
     cout<<"Lista ordenada con el BinSort: "<<endl;
     imprimir (vector);
-    template <class generico>
-    ListaEnlazada a(1);
-    a.insertarFinal(8);
-    cout << a.getDimension()<<endl;
-    a.imprimirLista();
+
     return 0;
 }
 
@@ -171,8 +169,6 @@ void imprimir(T vector[])
 }
 
  //Este código es una modificación de códigos originales de lwh.free.fr
-
-
 
 
 
