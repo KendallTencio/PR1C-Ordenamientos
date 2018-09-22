@@ -14,7 +14,7 @@
 #include "mergesort.h"
 #include "objetoprueba.cpp"
 
-
+#include "listaenlazada.cpp"
 using namespace std;
 
 //Este código es una modificación del original en lwh.free.fr
@@ -153,7 +153,7 @@ int main(){
     cout<<"\n\nLista desordenada con el MergeSort: "<<endl;
     imprimir(vector);
     //NO IMPLEMENTADO AÚN
-    mergesortPrueba.mergesorting(vector, 0, 19);
+    //mergesortPrueba.mergesorting(vector, 0, 19);
     cout<<"Lista ordenada con el MergeSort: "<<endl;
     imprimir (vector);
 
@@ -170,7 +170,10 @@ int main(){
    // binsortPrueba.binsort(vector, 20);
     cout<<"Lista ordenada con el BinSort: "<<endl;
     imprimir (vector);
+    ListaEnlazada<int> a;
+    a.insertarCabeza(9);
 
+    cout<<a.getElemento(0)<<endl;
     return 0;
 }
 

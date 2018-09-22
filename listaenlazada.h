@@ -1,26 +1,25 @@
 #ifndef LISTAENLAZADA_H
 #define LISTAENLAZADA_H
-
-
+#include "nodo.h"
 #include "nodo.cpp"
-#include <iostream>
-
-template <class generico>
+template<class G>
 class ListaEnlazada
 {
-private:
-    Nodo<generico> *inicio;
-    Nodo<generico> *fin;
-    int tam;
 public:
     ListaEnlazada();
-    Nodo<generico> *Tlista;
-    void insertarInicio(generico valor);   //Como ves le quite que la clase sea template
-    void insertarFinal(generico valor);     //y se usó solo donde se necesita
-    void insertarElemento(generico valor, int pos);
-    int getDimension();                 //pero aquí no tenían, ese era un problema
+    ~ListaEnlazada();
 
-     //Lista es un nodo y en el cpp lo
-};                           //igualaste a un int, eso daba error
+    void insertarCabeza(G);
+    void insertarFinal(G Dato);
+    void insertarPos(G,int);
+    Nodo<G>* getCabeza();
+    Nodo<G>* getSgte();
+    int getTam();
+    G getElemento(int);
+
+private:
+    Nodo<G> *cabeza;
+    int tam;
+};
 
 #endif // LISTAENLAZADA_H

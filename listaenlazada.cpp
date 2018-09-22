@@ -1,50 +1,97 @@
 #include "listaenlazada.h"
-
-using namespace std;
-
-template<class generico>
-ListaEnlazada<generico>::ListaEnlazada()
+#include <iostream>
+template<typename G>
+ListaEnlazada<G>::ListaEnlazada()
 {
-    inicio=0;
-    fin=0;
-    tam=0;
-    inicio->setSiguiente(fin);
+    this->tam=0;
+    this->cabeza=0;
+}
+template<typename G>
+ListaEnlazada<G>::~ListaEnlazada()
+{}
+template<typename G>
+void ListaEnlazada<G>::insertarCabeza(G data)
+{
+    Nodo<G> *nuevo = new Nodo<G>(data);
+    Nodo<G> *temp = cabeza;
+    if(!cabeza)
+    {
+        cabeza=nuevo;
+    }else{
+        nuevo->setSiguiente(cabeza);
+        cabeza = nuevo;
+        while(temp)
+            temp=temp->getSiguiente();
+    }
+    tam++;
+}
+template<typename G>
+void ListaEnlazada<G>::insertarFinal(G Dato)
+{
+    Nodo<G> *nuevo = new Nodo<G>(Dato);
+    Nodo<G> *temp = cabeza;
+    if(!cabeza)
+    {
+        cabeza=nuevo;
+
+    }else
+    {
+        while(temp->getSiguiente())
+            temp=temp->getSiguiente();
+    }
+    temp->setSiguiente(nuevo);
+    tam++;
 }
 
-template<class generico>
-void ListaEnlazada<generico>::insertarInicio(generico valor)   //Le deje los template solo a los que los usan
+template<typename G>
+void ListaEnlazada<G>::insertarPos(G dato,int pos)
 {
+    Nodo<G> *nuevo = new Nodo<G>(dato);
+    Nodo<G> *temp = cabeza;
+    int i=0;
+    if(pos>this->tam||pos<0)
+    {
 
-}
-template<class generico>
-void ListaEnlazada<generico>::insertarFinal( generico valor)
-{
-}
-
-template<class generico>
-void ListaEnlazada<generico>::insertarElemento( generico valor, int pos)
-{
-    Nodo<generico> q(valor);
-    Nodo<generico> t(inicio->getElemento());
-    int i;
-
-
-
-        for(i=1; i>this->tam; i++)
+    }else
+    {
+        if(pos==0){
+            this->insertarCabeza(dato);
+        }else{
+        while(i!=pos-1)
         {
-            if(i==pos)
-            {
-                q.setSiguiente(t.getSiguiente());
-                t.setSiguiente(q);
-
-            }
+             temp=temp->getSiguiente();
+             i++;
         }
-        tam++;
+        nuevo->setSiguiente(temp);
+        temp->setSiguiente(nuevo);
+       tam++;
+    }
+    }
+
 
 }
-template<class generico>
-int ListaEnlazada<generico>::getDimension()
+
+template<typename G>
+Nodo<G>* ListaEnlazada<G>::getSgte()
 {
-    return tam;
+  return this->cabeza->getSiguiente();
 }
+template<typename G>
+int ListaEnlazada<G>::getTam()
+{
+  return this->tam;
+}
+template<typename G>
+G ListaEnlazada<G>::getElemento(int pos)
+{   Nodo<G> *temp = cabeza;
+    int i=0;
+    while (pos!=i) {
+            temp=temp->getSiguiente();
+            i++;
+    }
+    return temp->getElemento();
+}
+
+
+
 

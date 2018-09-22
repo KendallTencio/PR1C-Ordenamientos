@@ -8,13 +8,12 @@ private:
     G elemento;
     Nodo<G>* siguiente;
 public:
-
      Nodo();
      Nodo(G dato);
+     ~Nodo();
      G getElemento();
      Nodo<G>* getSiguiente();
-     void setSiguiente(Nodo<G>* sig);
-     void setElemento(G elem);
+     void setSiguiente(Nodo<G>*);
 };
 
 #endif // NODO_H

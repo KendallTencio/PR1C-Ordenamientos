@@ -11,24 +11,18 @@ Nodo<G>::Nodo(G dato)
     this->elemento=dato;
     this->siguiente=0;
 }
-template <class G>
-void Nodo<G>::setSiguiente(Nodo<G>* sig) {
-  siguiente = sig;
-}
 template<typename G>
-void Nodo<G>::setElemento(G elem) {
-  elemento = elem;
-}
+Nodo<G>::~Nodo(){}
 template<typename G>
 Nodo<G>* Nodo<G>::getSiguiente() {
-        return siguiente;
+  return siguiente;
 }
 template<typename G>
 G Nodo<G>::getElemento() {
-    return elemento;
+  return elemento;
 }
-
-
-
-
-
+template<typename G>
+void Nodo<G>::setSiguiente(Nodo<G>* direccion)
+{
+    this->siguiente=direccion;
+}
