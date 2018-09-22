@@ -150,7 +150,7 @@ int main(){
     cout<<"\n\nLista desordenada con el MergeSort: "<<endl;
     imprimir(vector);
     //NO IMPLEMENTADO AÚN
-    mergesortPrueba.mergesorting(vector, 0, 0);
+    mergesortPrueba.mergesorting(vector, 0, 19);
     cout<<"Lista ordenada con el MergeSort: "<<endl;
     imprimir (vector);
 
