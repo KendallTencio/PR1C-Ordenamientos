@@ -2,13 +2,15 @@
 //Código extraído y modificado de la página: https://www.geeksforgeeks.org/merge-sort/
 
 
-/*MergeSort::MergeSort()
+MergeSort::MergeSort()
 {
     x = 0;
 }
-*/
+
 /* l is for left index and r is right index of the
    sub-array of arr to be sorted */
+
+
 template <class T>
 void MergeSort::mergesorting(T *arr, int l, int r)
 {
