@@ -6,8 +6,8 @@ using namespace std;
 
 struct Pila {
 private:
-    char stackData[SIZE];
-    int topOfStack;
+    char registroPila[SIZE];
+    int cima;
 public:
     Pila();
     void push(char ch);

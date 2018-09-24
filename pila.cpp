@@ -1,26 +1,28 @@
 #include "pila.h"
 
+//Basado en: http://www.java2s.com/Code/Cpp/Class/Stackclassusingastructure.htm
+
 Pila::Pila()
 {
-  topOfStack = 0;
+  cima = 0;
 }
-
-void Pila::push(char ch)
+template <class T>
+void Pila::push(T ch)
 {
-  if(topOfStack==SIZE) {
+  if(cima==SIZE) {
     cout << "Pila llena\n";
     return;
   }
-  stackData[topOfStack] = ch;
-  topOfStack++;
+  registroPila[cima] = ch;
+  cima++;
 }
 
 char Pila::pop()
 {
-  if(topOfStack==0) {
+  if(cima==0) {
     cout << "Pila vacía\n";
     return 0; // retorna nulo a la pila
   }
-  topOfStack--;
-  return stackData[topOfStack];
+  cima--;
+  return registroPila[cima];
 }
