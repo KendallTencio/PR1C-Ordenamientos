@@ -188,7 +188,7 @@ int main(){
     ListaEnlazada<int> a;
     a.insertarCabeza(91);
 
-    cout<<a.getElemento(0)<<endl;
+    //cout<<a.getElemento(0)<<endl;
     return 0;
 }
 

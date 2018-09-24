@@ -8,18 +8,16 @@ private:
     ListaEnlazada<T> lista;
 public:
     Pila();
-<<<<<<< HEAD
-    template <class T>
-    void push(T ch);
-    char pop();
-=======
-    ~Pila();
+//    void push(T ch);
+//    char pop();
+
     Nodo<T>* pop();
     void push(T);
+
     Nodo<T>* getCima();
     int getTam();
+    ~Pila();
 
->>>>>>> 4cfc2be1cff4dec65700cd7ab8f0ae22c10c93cd
 };
 
 #endif // PILA_H
