@@ -9,10 +9,10 @@
 #include "shell.cpp"
 #include "quicksort.cpp"
 #include "heapsort.cpp"
-//#include "binsort.cpp"
-//#include "mergesort.h"
+#include "binsort.cpp"
+#include "mergesort.h"
 #include "objetoprueba.cpp"
-//#include "radixsort.h"
+#include "radixsort.h"
 #include "pila.h"
 #include "pila.cpp"
 
@@ -178,11 +178,15 @@ int main(){
     {
         vector[i] = (1 + rand() % 100);
     }
-    int vector2[20];
     cout<<"\n\nLista desordenada con el BinSort: "<<endl;
     imprimir(vector);
     //NO IMPLEMENTADO AÚN
-    //binsortPrueba.binSort(vector,vector2, 20);
+    //float arr[] = {0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434};
+    //int n = sizeof(vector)/sizeof(vector[0]);
+    //binsortPrueba.binSort(vector, n);
+    cout << "Sorted array is \n";
+   // for (int i=0; i<n; i++)
+   //    cout << arr[i] << " ";
     cout<<"Lista ordenada con el BinSort: "<<endl;
     imprimir (vector);
     ListaEnlazada<int> a;
