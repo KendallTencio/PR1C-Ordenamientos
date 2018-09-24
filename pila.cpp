@@ -1,7 +1,5 @@
 #include "pila.h"
 
-//Basado en: http://www.java2s.com/Code/Cpp/Class/Stackclassusingastructure.htm
-
 Pila::Pila()
 {
   cima = 0;
@@ -10,8 +8,7 @@ template <class T>
 void Pila::push(T ch)
 {
   if(cima==SIZE) {
-    cout << "Pila llena\n";
-    return;
+    return;   //En caso de que la pila esté llena
   }
   registroPila[cima] = ch;
   cima++;
@@ -20,8 +17,7 @@ void Pila::push(T ch)
 char Pila::pop()
 {
   if(cima==0) {
-    cout << "Pila vacía\n";
-    return 0; // retorna nulo a la pila
+    return 0; // retorna nulo porque la pila está vacía.
   }
   cima--;
   return registroPila[cima];
