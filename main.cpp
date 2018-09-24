@@ -190,6 +190,11 @@ int main(){
     cout<<"Lista ordenada con el BinSort: "<<endl;
     imprimir (vector);
     ListaEnlazada<int> a;
+    Pila<int> pila;
+    while(pila.getTam()!=10)
+        pila.push(1 + rand() % 100);
+    while(pila.getCima())
+        cout<< pila.pop() <<endl;
     a.insertarCabeza(91);
 
     //cout<<a.getElemento(0)<<endl;
