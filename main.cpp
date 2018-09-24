@@ -13,7 +13,8 @@
 //#include "mergesort.h"
 #include "objetoprueba.cpp"
 //#include "radixsort.h"
-#include "listaenlazada.cpp"
+#include "pila.h"
+#include "pila.cpp"
 
 using namespace std;
 
@@ -185,7 +186,7 @@ int main(){
     cout<<"Lista ordenada con el BinSort: "<<endl;
     imprimir (vector);
     ListaEnlazada<int> a;
-    a.insertarCabeza(9);
+    a.insertarCabeza(91);
 
     cout<<a.getElemento(0)<<endl;
     return 0;

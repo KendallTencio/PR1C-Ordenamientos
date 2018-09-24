@@ -1,6 +1,6 @@
 #ifndef LISTAENLAZADA_H
 #define LISTAENLAZADA_H
-#include "nodo.h"
+
 #include "nodo.cpp"
 template<class G>
 class ListaEnlazada
@@ -15,8 +15,8 @@ public:
     Nodo<G>* getCabeza();
     Nodo<G>* getSgte();
     int getTam();
-    G getElemento(int);
-
+    Nodo<G>* getPos(int);
+    void getEliminarPos(int);
 private:
     Nodo<G> *cabeza;
     int tam;
