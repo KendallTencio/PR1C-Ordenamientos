@@ -2,14 +2,13 @@
 
 Pila::Pila()
 {
-  cout << "Constructing a stack\n";
   topOfStack = 0;
 }
 
 void Pila::push(char ch)
 {
   if(topOfStack==SIZE) {
-    cout << "Stack is full\n";
+    cout << "Pila llena\n";
     return;
   }
   stackData[topOfStack] = ch;
@@ -19,8 +18,8 @@ void Pila::push(char ch)
 char Pila::pop()
 {
   if(topOfStack==0) {
-    cout << "Stack is empty\n";
-    return 0; // return null on empty stack
+    cout << "Pila vacía\n";
+    return 0; // retorna nulo a la pila
   }
   topOfStack--;
   return stackData[topOfStack];
