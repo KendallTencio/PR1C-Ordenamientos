@@ -1,6 +1,6 @@
 #ifndef LISTAENLAZADA_H
 #define LISTAENLAZADA_H
-#include "nodo.h"
+
 #include "nodo.cpp"
 template<class G>
 class ListaEnlazada

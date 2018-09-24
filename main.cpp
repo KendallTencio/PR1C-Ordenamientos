@@ -171,7 +171,7 @@ int main(){
     cout<<"Lista ordenada con el BinSort: "<<endl;
     imprimir (vector);
     ListaEnlazada<int> a;
-    a.insertarCabeza(9);
+    a.insertarCabeza(91);
 
     cout<<a.getElemento(0)<<endl;
     return 0;
