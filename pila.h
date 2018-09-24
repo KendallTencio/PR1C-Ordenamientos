@@ -1,22 +1,19 @@
 #ifndef PILA_H
 #define PILA_H
-#include <iostream>
-using namespace std;
-#define SIZE 10
-
-struct Pila {
+#include "listaenlazada.cpp"
+template<class T>
+class Pila
+{
 private:
-    char registroPila[SIZE];
-    int cima;
+    ListaEnlazada<T> lista;
 public:
     Pila();
-    void push(char ch);
-    char pop();
+    ~Pila();
+    Nodo<T>* pop();
+    void push(T);
+    Nodo<T>* getCima();
+    int getTam();
+
 };
 
 #endif // PILA_H
-
-
-
-
-

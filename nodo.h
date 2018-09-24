@@ -8,7 +8,6 @@ private:
     G elemento;
     Nodo<G>* siguiente;
 public:
-     Nodo();
      Nodo(G dato);
      ~Nodo();
      G getElemento();

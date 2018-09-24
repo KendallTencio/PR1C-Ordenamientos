@@ -1,24 +1,28 @@
 #include "pila.h"
-
-Pila::Pila()
+template<typename T>
+Pila<T>::Pila()
+{}
+template<typename T>
+Pila<T>::~Pila(){}
+template<typename T>
+Nodo<T>* Pila<T>::pop()
 {
-  cima = 0;
+    Nodo<T> *temp = lista.getPos(lista.getTam()-1);
+    lista.getEliminarPos(lista.getTam()-1);
+    return temp;
 }
-template <class T>
-void Pila::push(T ch)
+template<typename T>
+void Pila<T>::push(T elem)
 {
-  if(cima==SIZE) {
-    return;   //En caso de que la pila esté llena
-  }
-  registroPila[cima] = ch;
-  cima++;
+    lista.insertarFinal(elem);
 }
-
-char Pila::pop()
+template<typename T>
+Nodo<T>* Pila<T>::getCima()
 {
-  if(cima==0) {
-    return 0; // retorna nulo porque la pila está vacía.
-  }
-  cima--;
-  return registroPila[cima];
+    return lista.getPos(lista.getTam()-1);
+}
+template<typename T>
+int Pila<T>::getTam()
+{
+    return lista.getTam();
 }

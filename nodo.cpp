@@ -1,11 +1,5 @@
 #include "nodo.h"
 template <class G>
-Nodo<G>::Nodo()
-{
-    this->elemento=0;
-    this->siguiente=0;
-}
-template <class G>
 Nodo<G>::Nodo(G dato)
 {
     this->elemento=dato;
@@ -19,7 +13,7 @@ Nodo<G>* Nodo<G>::getSiguiente() {
 }
 template<typename G>
 G Nodo<G>::getElemento() {
-  return elemento;
+        return elemento;
 }
 template<typename G>
 void Nodo<G>::setSiguiente(Nodo<G>* direccion)
