@@ -13,7 +13,8 @@
 //#include "mergesort.h"
 #include "objetoprueba.cpp"
 //#include "radixsort.h"
-#include "listaenlazada.cpp"
+#include "pila.h"
+#include "pila.cpp"
 
 using namespace std;
 
