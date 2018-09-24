@@ -8,8 +8,6 @@ private:
     ListaEnlazada<T> lista;
 public:
     Pila();
-//    void push(T ch);
-//    char pop();
 
     Nodo<T>* pop();
     void push(T);
