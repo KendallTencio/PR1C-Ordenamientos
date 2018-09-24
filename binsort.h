@@ -5,11 +5,12 @@
 class BinSort
 {
 private:
-    int* data;
+    int vectorBinS[];
     int count;
 public:
     BinSort();
-    void binsort(int* data, int count);
+    template<class T>
+    void binSort(T vectorBin,T vectorBinS, int tam);
     ~BinSort();
 };
 

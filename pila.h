@@ -10,7 +10,8 @@ private:
     int cima;
 public:
     Pila();
-    void push(char ch);
+    template <class T>
+    void push(T ch);
     char pop();
 };
 

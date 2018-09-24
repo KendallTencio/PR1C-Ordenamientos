@@ -1,45 +1,30 @@
-/*#include "binsort.h"
+#include "binsort.h"
 
-BinSort::BinSort(){}
+BinSort::BinSort(){
 
-void BinSort::binsort(int* data, int count) {
-    int minValue = data[0];
-    int maxValue = data[0];
+}
 
-    for (int i = 1; i < count; i++)
+template<class T>
+void BinSort::binSort(T arr, T b, int tam)
+{
+    // 1) Create n empty buckets
+   // b[tam];
+
+    // 2) Put array elements in different buckets
+    for (int i=0; i<tam; i++)
     {
-        if (data[i] > maxValue)
-            maxValue = data[i];
-        if (data[i] < minValue)
-            minValue = data[i];
+       int bi = tam*arr[i]; // Index in bucket
+       b[bi].push_back(arr[i]);
     }
 
-    int bucketLength = maxValue - minValue + 1;
-    vector<int>* bucket = new vector<int>[bucketLength];
+    // 3) Sort individual buckets
+    for (int i=0; i<tam; i++)
+       sort(b[i].begin(), b[i].end());
 
-    for (int i = 0; i < bucketLength; i++)
-    {
-        bucket[i] = vector<int>();
-    }
-
-    for (int i = 0; i < count; i++)
-    {
-        bucket[data[i] - minValue].push_back(data[i]);
-    }
-
-    int k = 0;
-    for (int i = 0; i < bucketLength; i++)
-    {
-        int bucketSize = bucket[i].size();
-
-        if (bucketSize > 0)
-        {
-            for (int j = 0; j < bucketSize; j++)
-            {
-                data[k] = bucket[i][j];
-                k++;
-            }
-        }
-    }
-}*/
+    // 4) Concatenate all buckets into arr[]
+    int index = 0;
+    for (int i = 0; i < tam; i++)
+        for (int j = 0; j < b[i].size(); j++)
+          arr[index++] = b[i][j];
+}
 

@@ -177,11 +177,11 @@ int main(){
     {
         vector[i] = (1 + rand() % 100);
     }
-
+    int vector2[20];
     cout<<"\n\nLista desordenada con el BinSort: "<<endl;
     imprimir(vector);
     //NO IMPLEMENTADO AÚN
-   // binsortPrueba.binsort(vector, 20);
+    //binsortPrueba.binSort(vector,vector2, 20);
     cout<<"Lista ordenada con el BinSort: "<<endl;
     imprimir (vector);
     ListaEnlazada<int> a;
