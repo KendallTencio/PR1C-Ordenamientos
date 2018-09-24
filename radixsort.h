@@ -11,9 +11,9 @@ public:
     template <class T>
     void radixsort(T *vectorRS, int n);
     template <class T>
-    void countSort(T *arr[], int n, int exp);
-     template <class T>
-    int getMax(T *arr[], int n);
+    void countSort(T *vectorRS, int n, int exp);
+    template <class T>
+    int getMax(T *vectorRS, int n);
     ~RadixSort();
 };
 

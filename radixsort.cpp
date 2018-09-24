@@ -1,4 +1,4 @@
-/*
+
 //Modificado de : https://www.geeksforgeeks.org/radix-sort/
 
 #include <math.h>
@@ -12,7 +12,7 @@ RadixSort::RadixSort()
 // The main function to that sorts arr[] of size n using
 // Radix Sort
 template <class T>
-void RadixSort::radixsort(int arr[], int n)
+void RadixSort::radixsort(T * arr, int n)
 {
     // Find the maximum number to know number of digits
     int m = getMax(arr, n);
@@ -26,7 +26,7 @@ void RadixSort::radixsort(int arr[], int n)
 
 // A utility function to get maximum value in arr[]
 template <class T>
-int RadixSort::getMax(int arr[], int n)
+int RadixSort::getMax(T *arr, int n)
 {
     int mx = arr[0];
     for (int i = 1; i < n; i++)
@@ -38,7 +38,7 @@ int RadixSort::getMax(int arr[], int n)
 // A function to do counting sort of arr[] according to
 // the digit represented by exp.
 template <class T>
-void RadixSort::countSort(int arr[], int n, int exp)
+void RadixSort::countSort(T *arr, int n, int exp)
 {
     int output[n]; // output array
     int i, count[10] = {0};
@@ -69,4 +69,4 @@ RadixSort::~RadixSort()
 {
 
 }
-*/
+

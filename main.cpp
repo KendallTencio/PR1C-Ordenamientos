@@ -1,6 +1,5 @@
 
 #include <QCoreApplication>
-#include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include "bubblesort.cpp"
@@ -11,10 +10,11 @@
 #include "quicksort.cpp"
 #include "heapsort.cpp"
 //#include "binsort.cpp"
-#include "mergesort.h"
+//#include "mergesort.h"
 #include "objetoprueba.cpp"
-
+//#include "radixsort.h"
 #include "listaenlazada.cpp"
+
 using namespace std;
 
 //Este código es una modificación del original en lwh.free.fr
@@ -144,7 +144,7 @@ int main(){
 
 
     //------------------MergeSort-------------------------------------------------------------------
-    MergeSort mergesortPrueba;
+    //MergeSort mergesortPrueba;
     for (i = 0; i<19; i++)
     {
         vector[i] = (1 + rand() % 100);
@@ -154,6 +154,20 @@ int main(){
     imprimir(vector);
     //NO IMPLEMENTADO AÚN
     //mergesortPrueba.mergesorting(vector, 0, 19);
+    cout<<"Lista ordenada con el MergeSort: "<<endl;
+    imprimir (vector);
+
+    //------------------RadixSort-------------------------------------------------------------------
+    //RadixSort radixsortPrueba;
+    for (i = 0; i<19; i++)
+    {
+        vector[i] = (1 + rand() % 100);
+    }
+
+    cout<<"\n\nLista desordenada con el MergeSort: "<<endl;
+    imprimir(vector);
+    //NO IMPLEMENTADO AÚN
+    //radixsortPrueba.radixsort(vector, 19);
     cout<<"Lista ordenada con el MergeSort: "<<endl;
     imprimir (vector);
 

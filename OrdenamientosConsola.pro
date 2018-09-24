@@ -28,7 +28,10 @@ SOURCES += \
     binsort.cpp \
     mergesort.cpp \
     nodo.cpp \
-    listaenlazada.cpp
+    listaenlazada.cpp \
+    pila.cpp \
+    cola.cpp \
+    listadoblementeenlazada.cpp
 
 HEADERS += \
     bubblesort.h \
@@ -42,4 +45,7 @@ HEADERS += \
     radixsort.h \
     mergesort.h \
     nodo.h \
-    listaenlazada.h
+    listaenlazada.h \
+    pila.h \
+    cola.h \
+    listadoblementeenlazada.h
