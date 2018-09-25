@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     i.insertarFinal(12);
     i.insertarFinal(321);
     i.insertarFinal(7843);
-    i.getEliminarPos(1);
+    i.getEliminarPos(0);
     std::cout << i.getPos(0)->getElemento() << std::endl;
 
     return 0; //a.exec()

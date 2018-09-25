@@ -103,7 +103,7 @@ void ListaEnlazada<G>::getEliminarPos(int pos)
     Nodo<G> *temp = cabeza;
     Nodo<G> *eliminar;
     int i=0;
-    if (pos==0){
+    if (!cabeza->getSiguiente()){
         cabeza->~Nodo();
         cabeza=0;
     }else{
