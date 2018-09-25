@@ -1,11 +1,11 @@
 #include "bubblesort.h"
-
-BubbleSort::BubbleSort(){
+template <class T>
+BubbleSort<T>::BubbleSort(){
     x = 1;
 }
 
 template <class T>
-void BubbleSort::bubble_sort(T* vectorBS)
+void BubbleSort<T>::bubble_sort(T* vectorBS)
     {
         int iteracion = 0;
         bool permutation = true;
@@ -26,8 +26,8 @@ void BubbleSort::bubble_sort(T* vectorBS)
         }
 
     }
-
-BubbleSort::~BubbleSort()
+template <class T>
+BubbleSort<T>::~BubbleSort()
 {
 
 }

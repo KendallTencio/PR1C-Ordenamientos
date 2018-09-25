@@ -1,6 +1,6 @@
 #include "interfaz.h"
 #include "ui_interfaz.h"
-#include "bi_bubblesort.h"
+#include "bubblesort.cpp"
 #include <iostream>
 
 using namespace std;
@@ -19,6 +19,37 @@ Interfaz::~Interfaz()
 
 void Interfaz::on_pushButton_clicked()
 {
+<<<<<<< HEAD
+=======
+      srand(time(0));
+      int i;
+      int vector[20];
+      int vectorOBJ[20];
+
+      //char vectorC[] = {'q','t','s','u','c','k','s'};
+
+      //------------------------Bubble Bidireccional--------------------------------------------
+
+      BubbleSort<int> burbujaBiPrueba;
+      for (i = 0; i<19; i++){
+          vector[i] = (1 + rand() % 100);
+      }
+      cout<<"Lista desordenada con el Bubble Bidireccional: "<<endl;
+      cout<<"\n";
+      for (i = 0; i<19; i++){
+          cout<<vector[i];
+          cout<<", ";
+      }
+      cout<<"\n"<<endl;
+      burbujaBiPrueba.bubble_sort(vector);
+      cout<<"Lista ordenada con el Bubble Bidireccional: "<<endl;
+      cout<<"\n";
+      for (i = 0; i<19; i++){
+          cout<<vector[i];
+          cout<<", ";
+      }
+      cout<<"\n"<<endl;
+>>>>>>> de5a2c71a9e49da56b075199043e88cef216e549
 
 
 }
