@@ -109,7 +109,7 @@ void ListaEnlazada<G>::getEliminarPos(int pos)
     }else{
 
 
-    while (pos-1!=i) {
+    while (pos!=i) {
         temp=temp->getSiguiente();
         i++;
     }

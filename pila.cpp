@@ -19,7 +19,7 @@ void Pila<T>::push(T elem)
 template<typename T>
 Nodo<T>* Pila<T>::getCima()
 {
-    return lista.getPos(lista.getTam()-1);
+    return lista.getPos(lista.getTam());
 }
 template<typename T>
 int Pila<T>::getTam()
