@@ -98,18 +98,26 @@ Nodo<G>* ListaEnlazada<G>::getPos(int pos)
     return temp;
 }
 template<typename G>
-void ListaEnlazada<G>::getEliminarPos(int pos)
+void ListaEnlazada<G>::EliminarPos(int pos)
 {
     Nodo<G> *temp = cabeza;
     Nodo<G> *eliminar;
     int i=0;
-    if (pos==0){
-        cabeza->~Nodo();
-        cabeza=0;
+    if (pos==0)
+    {
+        if(!cabeza->getSiguiente())
+        {
+            cabeza->~Nodo();
+            cabeza=0;
+        }else{
+            cabeza=cabeza->getSiguiente();
+        }
+
+
     }else{
 
 
-    while (pos!=i) {
+    while (pos-1!=i) {
         temp=temp->getSiguiente();
         i++;
     }

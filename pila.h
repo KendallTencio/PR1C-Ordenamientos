@@ -8,13 +8,11 @@ private:
     ListaEnlazada<T> lista;
 public:
     Pila();
-
+    ~Pila();
     Nodo<T>* pop();
     void push(T);
-
     Nodo<T>* getCima();
     int getTam();
-    ~Pila();
 
 };
 
