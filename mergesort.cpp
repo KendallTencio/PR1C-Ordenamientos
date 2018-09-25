@@ -1,8 +1,8 @@
 #include "mergesort.h"
 //Código extraído y modificado de la página: https://www.geeksforgeeks.org/merge-sort/
 
-
-MergeSort::MergeSort()
+template <class T>
+MergeSort<T>::MergeSort()
 {
     x = 0;
 }
@@ -12,7 +12,7 @@ MergeSort::MergeSort()
 
 
 template <class T>
-void MergeSort::mergesorting(T *arr, int l, int r)
+void MergeSort<T>::mergesorting(T *arr, int l, int r)
 {
     if (l < r)
     {
@@ -33,7 +33,7 @@ void MergeSort::mergesorting(T *arr, int l, int r)
 // Second subarray is arr[m+1..r]
 
 template <class T>
-void MergeSort::merge(T *arr, int l, int m, int r)
+void MergeSort<T>::merge(T *arr, int l, int m, int r)
 {
     int i, j, k;
     int n1 = m - l + 1;
@@ -86,7 +86,8 @@ void MergeSort::merge(T *arr, int l, int m, int r)
     }
 }
 
-MergeSort::~MergeSort()
+template <class T>
+MergeSort<T>::~MergeSort()
 {
 
 }

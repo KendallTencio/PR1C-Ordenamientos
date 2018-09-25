@@ -1,5 +1,7 @@
 #ifndef SHELL_H
 #define SHELL_H
+
+template <class T>
 class ShellSort
 {
   private:
@@ -9,9 +11,7 @@ class ShellSort
     int debut;
   public:
     ShellSort();
-    template <class T>
     void shell(T* vector);
-    template <class T>
     void auxShell(T* vectorSHS, int gap, int debut);
     ~ShellSort();
 };

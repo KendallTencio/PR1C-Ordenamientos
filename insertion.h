@@ -1,5 +1,7 @@
 #ifndef INSERTION_H
 #define INSERTION_H
+
+template <class T>
 class InsertionSort
 {
   private:
@@ -7,7 +9,6 @@ class InsertionSort
     int vectorIS[20];
   public:
     InsertionSort();
-    template <class T>
     void Insertion_sort(T* vectorIS);
     ~InsertionSort();
 };

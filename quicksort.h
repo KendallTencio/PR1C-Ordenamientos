@@ -1,5 +1,7 @@
 #ifndef QUICKSORT_H
 #define QUICKSORT_H
+
+template <class T>
 class QuickSort
 {
   private:
@@ -8,7 +10,6 @@ class QuickSort
     int size;
   public:
     QuickSort();
-    template <class T>
     void quickSort(T * vectorQS, int size);
     ~QuickSort();
 };

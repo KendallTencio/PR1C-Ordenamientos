@@ -5,11 +5,12 @@
 #include "binsort.h"
 using namespace std;
 
-BinSort::BinSort(){}
+template<class T>
+BinSort<T>::BinSort(){}
 
 // Function to sort arr[] of size n using bucket sort
 template<class T>
-void BinSort::binSort(T* arr, int n)
+void BinSort<T>::binSort(T* arr, int n)
 {
     // 1) Create n empty buckets
     vector<int> b[n];
@@ -31,5 +32,5 @@ void BinSort::binSort(T* arr, int n)
         for (int j = 0; j < b[i].size(); j++)
           arr[index++] = b[i][j];
 }
-
-BinSort::~BinSort(){}
+template<class T>
+BinSort<T>::~BinSort(){}

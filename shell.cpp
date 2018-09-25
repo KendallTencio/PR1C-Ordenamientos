@@ -1,11 +1,12 @@
 #include "shell.h"
 
-ShellSort::ShellSort(){
+template <class T>
+ShellSort<T>::ShellSort(){
     x = 1;
 }
 
 template <class T>
-void ShellSort::auxShell(T* vector, int gap, int debut)
+void ShellSort<T>::auxShell(T* vector, int gap, int debut)
 {
     int j,en_cours;
     for (int i = gap + debut; i < 20; i+=gap) {
@@ -17,7 +18,7 @@ void ShellSort::auxShell(T* vector, int gap, int debut)
     }
 }
 template <class T>
-void ShellSort::shell(T* vector)
+void ShellSort<T>::shell(T* vector)
 {
     int intervalles[5]={6,4,3,2,1};
     for (int ngap=0;ngap<5;ngap++) {
@@ -26,7 +27,8 @@ void ShellSort::shell(T* vector)
     }
 }
 
-ShellSort::~ShellSort()
+template <class T>
+ShellSort<T>::~ShellSort()
 {
 
 }

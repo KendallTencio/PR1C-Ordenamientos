@@ -1,5 +1,6 @@
 #ifndef BI_BUBBLESORT_H
 #define BI_BUBBLESORT_H
+template <class T>
 class BIBubbleSort
 {
   private:
@@ -8,7 +9,6 @@ class BIBubbleSort
   public:
    // template <class T>
     BIBubbleSort();
-    template <typename T>
     void bubbleBi_sort(T* vectorBIBS);
     ~BIBubbleSort();
 };

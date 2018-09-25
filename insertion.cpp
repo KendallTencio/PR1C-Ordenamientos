@@ -1,11 +1,12 @@
 #include "insertion.h"
 
-InsertionSort::InsertionSort(){
+template <class T>
+InsertionSort<T>::InsertionSort(){
     x = 1;
 }
 
 template <class T>
-void InsertionSort::Insertion_sort(T* vectorIS)
+void InsertionSort<T>::Insertion_sort(T* vectorIS)
 {
     int i, j;
     int actual;
@@ -19,7 +20,8 @@ void InsertionSort::Insertion_sort(T* vectorIS)
     }
 }
 
-InsertionSort::~InsertionSort()
+template <class T>
+InsertionSort<T>::~InsertionSort()
 {
 
 }

@@ -1,6 +1,7 @@
 #ifndef MERGESORT_H
 #define MERGESORT_H
 
+template <class T>
 class MergeSort
 {
 private:
@@ -8,9 +9,7 @@ private:
     int vectorMS[20];
 public:
     MergeSort();
-    template <class T>
     void mergesorting(T *vectorMS, int l, int r);
-    template <class T>
     void merge(T *vectorMS, int l, int m, int r);
     ~MergeSort();
 };

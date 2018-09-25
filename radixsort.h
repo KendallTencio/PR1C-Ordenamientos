@@ -1,6 +1,7 @@
 #ifndef RADIXSORT_H
 #define RADIXSORT_H
 
+template <class T>
 class RadixSort
 {
 private:
@@ -8,11 +9,8 @@ private:
     int vectorRS[20];
 public:
     RadixSort();
-    template <class T>
     void radixsort(T *vectorRS, int n);
-    template <class T>
     void countSort(T *vectorRS, int n, int exp);
-    template <class T>
     int getMax(T *vectorRS, int n);
     ~RadixSort();
 };

@@ -2,12 +2,13 @@
 //Este código se le han hecho modificaciones, pero fue extraído de: https://www.geeksforgeeks.org/heap-sort/
 //Prototipos
 
-
-HeapSort::HeapSort(){
+template <class T>
+HeapSort<T>::HeapSort(){
     x = 1;
 }
+
 template <class T>
-void HeapSort::heapsort(T arr, int n, int i)
+void HeapSort<T>::heapsort(T arr, int n, int i)
 {
     int largest = i; // Initialize largest as root
     int l = 2*i + 1; // left = 2*i + 1
@@ -30,8 +31,8 @@ void HeapSort::heapsort(T arr, int n, int i)
         heapsort(arr, n, largest);
     }
 }
-
-HeapSort::~HeapSort()
+template <class T>
+HeapSort<T>::~HeapSort()
 {
 
 }

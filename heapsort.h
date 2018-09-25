@@ -1,6 +1,7 @@
 #ifndef HEAPSORT_H
 #define HEAPSORT_H
 
+template <class T>
 class HeapSort
 {
   private:
@@ -10,7 +11,6 @@ class HeapSort
     int i;
   public:
     HeapSort();
-    template <class T>
     void heapsort(T vectorHS, int n, int i);
     ~HeapSort();
 };

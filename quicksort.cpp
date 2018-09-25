@@ -1,11 +1,12 @@
 #include "quicksort.h"
 
-QuickSort::QuickSort(){
+template <class T>
+QuickSort<T>::QuickSort(){
     x = 1;
 }
 
 template <class T>
-void QuickSort::quickSort( T * vector , int tamanio ) {
+void QuickSort<T>::quickSort( T * vector , int tamanio ) {
     int muro , actual , pivote , tmp ;
     if ( tamanio < 2 ) return ;
     // Tomamos como pivote el elemento más correcto
@@ -26,7 +27,8 @@ void QuickSort::quickSort( T * vector , int tamanio ) {
     quickSort( vector + muro - 1 , tamanio- muro + 1 ) ;
 }
 
-QuickSort::~QuickSort()
+template <class T>
+QuickSort<T>::~QuickSort()
 {
 
 }

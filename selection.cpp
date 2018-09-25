@@ -1,11 +1,12 @@
 #include "selection.h"
 
-SelectionSort::SelectionSort(){
+template <class T>
+SelectionSort<T>::SelectionSort(){
   x = 1;
 }
 
 template <class T>
-void SelectionSort::selection(T *vector, int taille)
+void SelectionSort<T>::selection(T *vector, int taille)
 {
      int en_cours, plus_petit, j, temp;
 
@@ -22,7 +23,8 @@ void SelectionSort::selection(T *vector, int taille)
      }
 }
 
-SelectionSort::~SelectionSort()
+template <class T>
+SelectionSort<T>::~SelectionSort()
 {
 
 }

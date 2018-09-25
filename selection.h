@@ -1,5 +1,7 @@
 #ifndef SELECTION_H
 #define SELECTION_H
+
+template <class T>
 class SelectionSort
 {
   private:
@@ -9,7 +11,6 @@ class SelectionSort
   public:
    // template <class T>
     SelectionSort();
-    template <class T>
     void selection(T* vectorSS, int tamanio);
     ~SelectionSort();
 };

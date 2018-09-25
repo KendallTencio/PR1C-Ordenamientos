@@ -1,11 +1,11 @@
 #include "bi_bubblesort.h"
-
-BIBubbleSort::BIBubbleSort(){
+template <class T>
+BIBubbleSort<T>::BIBubbleSort(){
     x = 1;
 }
 
 template <class T>
-void BIBubbleSort::bubbleBi_sort(T vectorBIBS[])
+void BIBubbleSort<T>::bubbleBi_sort(T vectorBIBS[])
 {
     bool permutation;
     int actual=0, siguiente=1;
@@ -25,8 +25,8 @@ void BIBubbleSort::bubbleBi_sort(T vectorBIBS[])
         siguiente = -siguiente;
     } while (permutation);
 }
-
-BIBubbleSort::~BIBubbleSort()
+template <class T>
+BIBubbleSort<T>::~BIBubbleSort()
 {
 
 }
