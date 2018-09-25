@@ -16,7 +16,7 @@ public:
     Nodo<G>* getSgte();
     int getTam();
     Nodo<G>* getPos(int);
-    void getEliminarPos(int);
+    void EliminarPos(int);
 private:
     Nodo<G> *cabeza;
     int tam;
