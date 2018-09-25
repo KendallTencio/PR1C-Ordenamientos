@@ -9,6 +9,12 @@ class BubbleSort
   public:
     BubbleSort();
     void bubble_sort(T* vectorBS);
+    //void bubble_sort(T* cola);
+    //void bubble_sort(T* pila);
+    //void bubble_sort(T* listaEnlazada);
+    //void bubble_sort(T* listaEnlazadaDoble);
     ~BubbleSort();
 };
 #endif // BUBBLESORT_H
+
+

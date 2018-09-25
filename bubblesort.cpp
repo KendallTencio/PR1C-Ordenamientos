@@ -26,6 +26,31 @@ void BubbleSort<T>::bubble_sort(T* vectorBS)
         }
 
     }
+
+template <class T>
+void BubbleSort<T>::bubble_sort(T* cola)
+    {
+
+    }
+
+template <class T>
+void BubbleSort<T>::bubble_sort(T* pila)
+    {
+
+    }
+
+template <class T>
+void BubbleSort<T>::bubble_sort(T* listaEnlazada)
+    {
+
+    }
+
+template <class T>
+void BubbleSort<T>::bubble_sort(T* listaEnlazadaDoble)
+    {
+
+    }
+
 template <class T>
 BubbleSort<T>::~BubbleSort()
 {

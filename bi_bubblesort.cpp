@@ -25,6 +25,7 @@ void BIBubbleSort<T>::bubbleBi_sort(T vectorBIBS[])
         siguiente = -siguiente;
     } while (permutation);
 }
+
 template <class T>
 BIBubbleSort<T>::~BIBubbleSort()
 {

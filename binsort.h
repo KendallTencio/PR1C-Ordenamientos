@@ -10,6 +10,10 @@ private:
 public:
     BinSort();
     void binSort(T *vectorBinS, int tam);
+    //void binSort(T* cola, int tam);
+    //void binSort(T* pila, int tam);
+    //void binSort(T* listaEnlazada, int tam);
+    //void binSort(T* listaEnlazadaDoble, int tam);
     ~BinSort();
 };
 

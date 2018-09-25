@@ -1,4 +1,5 @@
 #include "heapsort.h"
+
 //Este código se le han hecho modificaciones, pero fue extraído de: https://www.geeksforgeeks.org/heap-sort/
 //Prototipos
 
@@ -8,7 +9,7 @@ HeapSort<T>::HeapSort(){
 }
 
 template <class T>
-void HeapSort<T>::heapsort(T arr, int n, int i)
+void HeapSort<T>::heapsort(T *arr, int n, int i)
 {
     int largest = i; // Initialize largest as root
     int l = 2*i + 1; // left = 2*i + 1
@@ -31,6 +32,8 @@ void HeapSort<T>::heapsort(T arr, int n, int i)
         heapsort(arr, n, largest);
     }
 }
+
+
 template <class T>
 HeapSort<T>::~HeapSort()
 {

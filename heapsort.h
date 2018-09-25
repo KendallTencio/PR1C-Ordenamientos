@@ -11,7 +11,7 @@ class HeapSort
     int i;
   public:
     HeapSort();
-    void heapsort(T vectorHS, int n, int i);
+    void heapsort(T *vectorHS, int n, int i);
     ~HeapSort();
 };
 
