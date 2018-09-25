@@ -15,6 +15,9 @@ public:
     explicit Interfaz(QWidget *parent = 0);
     ~Interfaz();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Interfaz *ui;
 };

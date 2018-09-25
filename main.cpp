@@ -5,8 +5,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //Interfaz w;
-    //w.show();
+    Interfaz w;
+    w.show();
     ListaEnlazada<int> i;
     i.insertarFinal(12);
     i.insertarFinal(321);
@@ -14,5 +14,7 @@ int main(int argc, char *argv[])
     i.getEliminarPos(1);
     std::cout << i.getPos(0)->getElemento() << std::endl;
 
-    return 0; //a.exec()
+
+
+    return a.exec();
 }
