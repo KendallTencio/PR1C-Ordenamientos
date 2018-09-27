@@ -41,7 +41,8 @@ SOURCES += \
     quicksort.cpp \
     radixsort.cpp \
     selection.cpp \
-    shell.cpp
+    shell.cpp \
+    mainwindow.cpp
 
 HEADERS += \
         interfaz.h \
@@ -59,7 +60,12 @@ HEADERS += \
     quicksort.h \
     radixsort.h \
     selection.h \
-    shell.h
+    shell.h \
+    mainwindow.h
 
 FORMS += \
-        interfaz.ui
+        interfaz.ui \
+    mainwindow.ui
+
+RESOURCES += \
+    imagenes.qrc
