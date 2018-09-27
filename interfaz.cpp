@@ -37,7 +37,6 @@ void Interfaz::on_pushButton_clicked()
       srand(time(0));
       int i;
       int vector[20];
-      int vectorOBJ[20];
 
       //char vectorC[] = {'q','t','s','u','c','k','s'};
 
@@ -258,7 +257,7 @@ void Interfaz::on_pushButton_clicked()
               vector[i] = (1 + rand() % 100);
           }
 
-          cout<<"\n\nLista desordenada con el MergeSort: "<<endl;
+          cout<<"\n\nLista desordenada con el RadixSort: "<<endl;
           cout<<"\n";
           for (i = 0; i<19; i++){
               cout<<vector[i];
@@ -267,7 +266,7 @@ void Interfaz::on_pushButton_clicked()
           cout<<"\n"<<endl;
           //NO IMPLEMENTADO AÃšN
           radixsortPrueba.radixsort(vector, 19);
-          cout<<"Lista ordenada con el MergeSort: "<<endl;
+          cout<<"Lista ordenada con el RadixSort: "<<endl;
           cout<<"\n";
           for (i = 0; i<19; i++){
               cout<<vector[i];
