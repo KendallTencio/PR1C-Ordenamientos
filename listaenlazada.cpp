@@ -1,16 +1,13 @@
 #include "listaenlazada.h"
 #include <iostream>
-
 template<typename G>
 ListaEnlazada<G>::ListaEnlazada()
 {
     this->tam=0;
     this->cabeza=0;
 }
-
 template<typename G>
 ListaEnlazada<G>::~ListaEnlazada(){}
-
 template<typename G>
 void ListaEnlazada<G>::insertarCabeza(G data)
 {
@@ -19,9 +16,7 @@ void ListaEnlazada<G>::insertarCabeza(G data)
     if(!cabeza)
     {
         cabeza=nuevo;
-    }
-    else
-    {
+    }else{
         nuevo->setSiguiente(cabeza);
         cabeza = nuevo;
         while(temp)
@@ -29,7 +24,6 @@ void ListaEnlazada<G>::insertarCabeza(G data)
     }
     tam++;
 }
-
 template<typename G>
 void ListaEnlazada<G>::insertarFinal(G Dato)
 {
@@ -39,8 +33,7 @@ void ListaEnlazada<G>::insertarFinal(G Dato)
     {
         cabeza=nuevo;
 
-    }
-    else
+    }else
     {
         while(temp->getSiguiente())
             temp=temp->getSiguiente();
@@ -57,14 +50,12 @@ void ListaEnlazada<G>::insertarPos(G dato,int pos)
     int i=0;
     if(pos>this->tam||pos<0)
     {
-    }
-    else
+
+    }else
     {
         if(pos==0){
             this->insertarCabeza(dato);
-        }
-        else
-        {
+        }else{
             while(i!=pos-1)
             {
                 temp=temp->getSiguiente();
@@ -75,26 +66,24 @@ void ListaEnlazada<G>::insertarPos(G dato,int pos)
             tam++;
         }
     }
-}
 
+
+}
 template<typename G>
 Nodo<G>* ListaEnlazada<G>::getSgte()
 {
     return this->cabeza->getSiguiente();
 }
-
 template<typename G>
 Nodo<G>* ListaEnlazada<G>::getCabeza()
 {
     return this->cabeza;
 }
-
 template<typename G>
 int ListaEnlazada<G>::getTam()
 {
     return this->tam;
 }
-
 template<typename G>
 Nodo<G>* ListaEnlazada<G>::getPos(int pos)
 {
@@ -103,6 +92,8 @@ Nodo<G>* ListaEnlazada<G>::getPos(int pos)
     while (pos!=i) {
         temp=temp->getSiguiente();
         i++;
+
+
     }
     return temp;
 }
@@ -121,18 +112,21 @@ void ListaEnlazada<G>::EliminarPos(int pos)
         }else{
             cabeza=cabeza->getSiguiente();
         }
+
+
+    }else{
+
+
+    while (pos-1!=i) {
+        temp=temp->getSiguiente();
+        i++;
     }
-    else
-    {
-        while (pos-1!=i) {
-            temp=temp->getSiguiente();
-            i++;
-        }
-        eliminar = temp->getSiguiente();
-        temp->setSiguiente(eliminar->getSiguiente());
-        eliminar->~Nodo();
-        tam--;
+    eliminar = temp->getSiguiente();
+    temp->setSiguiente(eliminar->getSiguiente());
+    eliminar->~Nodo();
+    tam--;
     }
+
 }
 
 

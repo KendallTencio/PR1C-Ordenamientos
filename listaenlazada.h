@@ -1,7 +1,7 @@
 #ifndef LISTAENLAZADA_H
 #define LISTAENLAZADA_H
 
-#include "nodo.cpp"
+#include "nodoListaEnlazada.cpp"
 template<class G>
 class ListaEnlazada
 {
