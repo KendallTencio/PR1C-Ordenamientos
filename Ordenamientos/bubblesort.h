@@ -12,7 +12,7 @@ class BubbleSort
     void bubble_sort(T* vectorBS);
     //void bubble_sort(Cola<T>*);
     //void bubble_sort(T* pila);
-    void bubble_sort(T*);
+    //void bubble_sort(T*);
     //void bubble_sort(T* listaEnlazadaDoble);
     ~BubbleSort();
 };
