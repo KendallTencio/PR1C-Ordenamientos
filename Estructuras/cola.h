@@ -15,6 +15,7 @@ public:
     void encolar(G);
     NodoCola<G>* desencolar();
    int getTam();
+   int isVacia();
 };
 
 #endif // COLA_H

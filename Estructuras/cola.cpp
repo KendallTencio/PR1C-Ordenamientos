@@ -23,6 +23,12 @@ void Cola<G>::encolar(G dato){
     tam++;
 }
 template<typename G>
+int Cola<G>::isVacia(){
+    if(cabeza)
+        return true;
+    return false;
+}
+template<typename G>
 NodoCola<G>* Cola<G>::desencolar()
 {
     NodoCola<G> *temp = this->getPos(tam-1);

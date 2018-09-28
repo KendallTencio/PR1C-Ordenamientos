@@ -24,6 +24,7 @@ void ListaEnlazada<G>::insertarCabeza(G data)
     }
     tam++;
 }
+
 template<typename G>
 void ListaEnlazada<G>::insertarFinal(G Dato)
 {
@@ -41,6 +42,12 @@ void ListaEnlazada<G>::insertarFinal(G Dato)
     }
 
     tam++;
+}
+template<typename G>
+int ListaEnlazada<G>::isVacia(){
+    if(cabeza)
+        return 1;
+    return 0;
 }
 template<typename G>
 void ListaEnlazada<G>::insertarPos(G dato,int pos)

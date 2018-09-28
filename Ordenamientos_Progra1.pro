@@ -25,47 +25,49 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        interfaz.cpp \
-    bi_bubblesort.cpp \
-    binsort.cpp \
-    bubblesort.cpp \
-    cola.cpp \
-    heapsort.cpp \
-    insertion.cpp \
-    listadoblementeenlazada.cpp \
-    listaenlazada.cpp \
-    mergesort.cpp \
-    nodo.cpp \
     objetoprueba.cpp \
-    pila.cpp \
-    quicksort.cpp \
-    radixsort.cpp \
-    selection.cpp \
-    shell.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    Estructuras/cola.cpp \
+    Estructuras/listadoblementeenlazada.cpp \
+    Estructuras/listaenlazada.cpp \
+    Estructuras/nodocola.cpp \
+    Estructuras/nodoListaEnlazada.cpp \
+    Estructuras/nodoPila.cpp \
+    Estructuras/pila.cpp \
+    Ordenamientos/bi_bubblesort.cpp \
+    Ordenamientos/binsort.cpp \
+    Ordenamientos/bubblesort.cpp \
+    Ordenamientos/heapsort.cpp \
+    Ordenamientos/insertion.cpp \
+    Ordenamientos/mergesort.cpp \
+    Ordenamientos/quicksort.cpp \
+    Ordenamientos/radixsort.cpp \
+    Ordenamientos/selection.cpp \
+    Ordenamientos/shell.cpp
 
 HEADERS += \
-        interfaz.h \
-    bi_bubblesort.h \
-    binsort.h \
-    bubblesort.h \
-    cola.h \
-    heapsort.h \
-    insertion.h \
-    listadoblementeenlazada.h \
-    listaenlazada.h \
-    mergesort.h \
-    nodo.h \
-    pila.h \
-    quicksort.h \
-    radixsort.h \
-    selection.h \
-    shell.h \
-    mainwindow.h
+    mainwindow.h \
+    Estructuras/cola.h \
+    Estructuras/listadoblementeenlazada.h \
+    Estructuras/listaenlazada.h \
+    Estructuras/nodocola.h \
+    Estructuras/nodoListaEnlazada.h \
+    Estructuras/nodoPila.h \
+    Estructuras/pila.h \
+    Ordenamientos/bi_bubblesort.h \
+    Ordenamientos/binsort.h \
+    Ordenamientos/bubblesort.h \
+    Ordenamientos/heapsort.h \
+    Ordenamientos/insertion.h \
+    Ordenamientos/mergesort.h \
+    Ordenamientos/quicksort.h \
+    Ordenamientos/radixsort.h \
+    Ordenamientos/selection.h \
+    Ordenamientos/shell.h
+
 
 FORMS += \
         interfaz.ui \
     mainwindow.ui
 
-RESOURCES += \
-    imagenes.qrc
+RESOURCES +=
