@@ -72,8 +72,8 @@ void BubbleSort<T>::bubble_sort(ListaEnlazada<T>* listaEnlazada)
                 permutation = true;
                 // Intercambiamos los dos elementos
                 Nodo<T> temp = listaEnlazada->getPos(actual);
-                listaEnlazada->getPos(actual) = listaEnlazada->getPos(actual);
-                listaEnlazada->getPos(actual+1) = temp;
+                listaEnlazada->insertarPos(listaEnlazada->getPos(actual+1),actual);
+                listaEnlazada->insertarPos(temp,actual+1);
             }
         }
     }
@@ -90,3 +90,8 @@ BubbleSort<T>::~BubbleSort()
 {
 
 }
+
+
+
+
+
