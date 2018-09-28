@@ -70,4 +70,5 @@ FORMS += \
         interfaz.ui \
     mainwindow.ui
 
-RESOURCES +=
+RESOURCES += \
+    imagines.qrc
