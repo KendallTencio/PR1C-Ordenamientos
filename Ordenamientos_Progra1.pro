@@ -67,7 +67,6 @@ HEADERS += \
 
 
 FORMS += \
-        interfaz.ui \
     mainwindow.ui
 
 RESOURCES += \
