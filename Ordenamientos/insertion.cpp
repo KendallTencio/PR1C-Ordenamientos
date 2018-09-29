@@ -1,5 +1,5 @@
 #include "insertion.h"
-#include "listaenlazada.cpp"
+
 
 template <class T>
 InsertionSort<T>::InsertionSort(){

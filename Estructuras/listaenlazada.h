@@ -7,17 +7,17 @@ class ListaEnlazada
 {
 public:
     ListaEnlazada();
-    ~ListaEnlazada();
+    virtual ~ListaEnlazada();
 
-    void insertarCabeza(G);
-    void insertarFinal(G Dato);
-    void insertarPos(G,int);
-    Nodo<G>* getCabeza();
-    Nodo<G>* getSgte();
-    int getTam();
-    Nodo<G>* getPos(int);
-    void EliminarPos(int);
-    int isVacia();
+    virtual void insertarCabeza(G);
+    virtual void insertarFinal(G Dato);
+    virtual void insertarPos(G,int);
+    virtual Nodo<G>* getCabeza();
+    virtual Nodo<G>* getSgte();
+    virtual int getTam();
+    virtual Nodo<G>* getPos(int);
+    virtual void EliminarPos(int);
+    virtual int isVacia();
 private:
     Nodo<G> *cabeza;
     int tam;
