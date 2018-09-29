@@ -12,21 +12,10 @@ class BubbleSort
     void bubble_sort(T* vectorBS);
     //void bubble_sort(Cola<T>*);
     //void bubble_sort(T* pila);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
-=======
     //void bubble_sort(T*);
->>>>>>> acd01e3e5de85cf2db701ba6819529f24a784edb
-=======
-    void bubble_sort(T*);
->>>>>>> parent of c7edc1c... fsdf
-=======
 
-
->>>>>>> parent of 86c7e0a... h
+    //void bubble_sort(T*);
     //void bubble_sort(T* listaEnlazadaDoble);
     ~BubbleSort();
 };

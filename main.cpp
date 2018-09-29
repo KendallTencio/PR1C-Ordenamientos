@@ -4,28 +4,20 @@
 #include "Ordenamientos/bubblesort.cpp"
 int main(int argc, char *argv[])
 {
-    //QApplication a(argc, argv);
-    //MainWindow w;
-    //w.show();
-    //return a.exec();
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    /*
     ListaEnlazada<int> b;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 86c7e0a... h
     for(int i=0;b.getTam()<5;i++)
         b.insertarFinal(rand() % 30 + 1987);
     for(int i=0;b.getTam()<5;i++)
         std::cout << b.getPos(i)->getElemento() << std::endl;
-=======
     b.insertarCabeza(12);
->>>>>>> parent of c7edc1c... fsdf
     BubbleSort<int> a;
     a.bubble_sort(&b);
     return 0;
-<<<<<<< HEAD
-=======
+
     b.insertarCabeza(12);
     b.insertarCabeza(7);
   //  BubbleSort<int> a;
@@ -35,7 +27,4 @@ int main(int argc, char *argv[])
 */
     //a.bubble_sort(&b);
     return a.exec();
-
-=======
->>>>>>> parent of 86c7e0a... h
 }

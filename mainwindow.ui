@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="btnAbajo">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>490</x>
       <y>370</y>
       <width>75</width>
       <height>23</height>
@@ -31,7 +31,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>330</y>
+      <y>300</y>
       <width>621</width>
       <height>20</height>
      </rect>
@@ -68,8 +68,8 @@
    <widget class="QPushButton" name="btnArriba">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>350</y>
+      <x>490</x>
+      <y>340</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -81,7 +81,7 @@
    <widget class="QPushButton" name="btnIzquierda">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>410</x>
       <y>370</y>
       <width>75</width>
       <height>23</height>
@@ -94,13 +94,8 @@
    <widget class="QPushButton" name="btnDerecha">
     <property name="geometry">
      <rect>
-<<<<<<< HEAD
-      <x>550</x>
-      <y>380</y>
-=======
-      <x>360</x>
+      <x>570</x>
       <y>370</y>
->>>>>>> parent of 67eef6d... Merge branch 'master' of https://github.com/KendallTencio/PR1C-Ordenamientos
       <width>75</width>
       <height>23</height>
      </rect>
@@ -109,12 +104,11 @@
      <string>derecha</string>
     </property>
    </widget>
-<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>360</y>
+      <y>340</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -166,7 +160,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>340</y>
+      <y>350</y>
       <width>141</width>
       <height>22</height>
      </rect>
@@ -230,7 +224,7 @@
    <widget class="Line" name="line_2">
     <property name="geometry">
      <rect>
-      <x>373</x>
+      <x>380</x>
       <y>320</y>
       <width>20</width>
       <height>121</height>
@@ -244,7 +238,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>370</y>
+      <y>380</y>
       <width>141</width>
       <height>22</height>
      </rect>
@@ -296,8 +290,6 @@
      <string>Rango</string>
     </property>
    </widget>
-=======
->>>>>>> parent of 67eef6d... Merge branch 'master' of https://github.com/KendallTencio/PR1C-Ordenamientos
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -305,7 +297,7 @@
      <x>0</x>
      <y>0</y>
      <width>650</width>
-     <height>21</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>

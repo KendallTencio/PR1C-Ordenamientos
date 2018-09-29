@@ -9,6 +9,7 @@ ListaEnlazada<G>::ListaEnlazada()
 }
 template<typename G>
 ListaEnlazada<G>::~ListaEnlazada(){}
+
 template<typename G>
 void ListaEnlazada<G>::insertarCabeza(G data)
 {
