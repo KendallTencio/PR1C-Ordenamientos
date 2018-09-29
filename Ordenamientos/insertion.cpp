@@ -1,5 +1,7 @@
 #include "insertion.h"
+<<<<<<< HEAD
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 #include "Estructuras/listaenlazada.cpp"
@@ -7,6 +9,11 @@
 #include "listaenlazada.cpp"
 =======
 >>>>>>> parent of 67eef6d... Merge branch 'master' of https://github.com/KendallTencio/PR1C-Ordenamientos
+=======
+=======
+#include "Estructuras/listaenlazada.cpp"
+>>>>>>> acd01e3e5de85cf2db701ba6819529f24a784edb
+>>>>>>> parent of 8b0dd65... vamo a ver
 
 template <class T>
 InsertionSort<T>::InsertionSort(){
