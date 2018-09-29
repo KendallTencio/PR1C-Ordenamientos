@@ -15,7 +15,7 @@ class InsertionSort:public ListaEnlazada<T>
   public:
     InsertionSort();
     void Insertion_sort(T* vectorIS);
-    void Insertion_sort(ListaEnlazada<T>* vectorIS);
+    //void Insertion_sort(ListaEnlazada<T>* vectorIS);
     void Insertion_sort(ListaEnlazada<T>* listaEnlazada);
     ~InsertionSort();
 };

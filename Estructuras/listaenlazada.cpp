@@ -1,5 +1,6 @@
 #include "listaenlazada.h"
 #include <iostream>
+
 template<typename G>
 ListaEnlazada<G>::ListaEnlazada()
 {
