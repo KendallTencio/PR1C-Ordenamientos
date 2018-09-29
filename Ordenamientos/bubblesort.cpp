@@ -83,8 +83,33 @@ void BubbleSort<T>::bubble_sort(Cola<int> pila)
     {
 
     }
+<<<<<<< HEAD
 */
 
+=======
+*//*
+template <class T>
+void BubbleSort<T>::bubble_sort(ListaEnlazada<T>* listaEnlazada)
+    {
+    int iteracion = 0;
+    bool permutation = true;
+    int actual;
+
+    while ( permutation) {
+        permutation = false;
+        iteracion ++;
+        for (actual=0;listaEnlazada->isVacia();actual++) {
+            if (listaEnlazada->getPos(actual)->getElemento()>listaEnlazada(actual+1)->getElemento()){
+                permutation = true;
+                // Intercambiamos los dos elementos
+                Nodo<T> temp = listaEnlazada->getPos(actual);
+                listaEnlazada->insertarPos(listaEnlazada->getPos(actual+1)->getElemento(),actual);
+                listaEnlazada->insertarPos(temp->getElemento(),actual+1);
+            }
+        }
+    }
+    }*/
+>>>>>>> acd01e3e5de85cf2db701ba6819529f24a784edb
 /*
 template <class T>
 void BubbleSort<T>::bubble_sort(ListaDoblementeEnlazada<T> listaEnlazadaDoble)
