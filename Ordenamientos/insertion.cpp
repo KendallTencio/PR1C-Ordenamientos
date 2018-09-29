@@ -1,6 +1,10 @@
 #include "insertion.h"
 
+
 #include "Estructuras/listaenlazada.cpp"
+
+#include "listaenlazada.cpp"
+
 template <class T>
 InsertionSort<T>::InsertionSort(){
     x = 1;

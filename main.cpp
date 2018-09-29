@@ -14,15 +14,16 @@ int main(int argc, char *argv[])
 /*
     ListaEnlazada<int> b;
 <<<<<<< HEAD
+<<<<<<< HEAD
     for(int i=0;b.getTam()<5;i++)
         b.insertarFinal(rand() % 30 + 1987);
     for(int i=0;b.getTam()<5;i++)
         std::cout << b.getPos(i)->getElemento() << std::endl;
+=======
+    b.insertarCabeza(12);
+>>>>>>> parent of c7edc1c... fsdf
     BubbleSort<int> a;
     a.bubble_sort(&b);
-    for(int i=0;b.getTam()<5;i++)
-        std::cout << b.getPos(i)->getElemento() << std::endl;
-
     return 0;
 =======
     b.insertarCabeza(12);
@@ -34,5 +35,5 @@ int main(int argc, char *argv[])
 */
     //a.bubble_sort(&b);
     return a.exec();
->>>>>>> acd01e3e5de85cf2db701ba6819529f24a784edb
+
 }
