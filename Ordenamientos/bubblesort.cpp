@@ -56,7 +56,6 @@ void BubbleSort<T>::bubble_sort(Cola<int> pila)
     {
 
     }
-<<<<<<< HEAD
 */
 template <class T>
 void BubbleSort<T>::bubble_sort(ListaEnlazada<T>* listaEnlazada)
@@ -65,6 +64,7 @@ void BubbleSort<T>::bubble_sort(ListaEnlazada<T>* listaEnlazada)
     bool permutation = true;
     int actual;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 *//*
@@ -105,6 +105,8 @@ void BubbleSort<T>::bubble_sort(ListaEnlazada<T>* listaEnlazada)
     }
     }
 >>>>>>> parent of c7edc1c... fsdf
+=======
+>>>>>>> parent of 86c7e0a... h
 /*
 template <class T>
 void BubbleSort<T>::bubble_sort(ListaDoblementeEnlazada<T> listaEnlazadaDoble)

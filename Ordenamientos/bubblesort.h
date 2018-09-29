@@ -14,6 +14,7 @@ class BubbleSort
     //void bubble_sort(T* pila);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -22,6 +23,10 @@ class BubbleSort
 =======
     void bubble_sort(T*);
 >>>>>>> parent of c7edc1c... fsdf
+=======
+
+
+>>>>>>> parent of 86c7e0a... h
     //void bubble_sort(T* listaEnlazadaDoble);
     ~BubbleSort();
 };
