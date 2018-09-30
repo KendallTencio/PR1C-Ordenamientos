@@ -2,7 +2,6 @@
 #define INSERTION_H
 #include "Estructuras/listaenlazada.h"
 
-
 template <class T>
 class InsertionSort
 {
@@ -11,8 +10,8 @@ class InsertionSort
     int vectorIS[20];
   public:
     InsertionSort();
-    void Insertion_sort(T* vectorIS);
-    void Insertion_sort(ListaEnlazada<T>* listaEnlazada);
+   // void Insertion_sort(T* vectorIS);
+   // void Insertion_sort(ListaEnlazada<T>* listaEnlazada);
 
     ~InsertionSort();
 };
