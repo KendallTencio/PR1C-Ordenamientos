@@ -43,7 +43,8 @@ SOURCES += \
     Ordenamientos/quicksort.cpp \
     Ordenamientos/radixsort.cpp \
     Ordenamientos/selection.cpp \
-    Ordenamientos/shell.cpp
+    Ordenamientos/shell.cpp \
+    objetomovil.cpp
 
 HEADERS += \
     mainwindow.h \
@@ -63,7 +64,8 @@ HEADERS += \
     Ordenamientos/quicksort.h \
     Ordenamientos/radixsort.h \
     Ordenamientos/selection.h \
-    Ordenamientos/shell.h
+    Ordenamientos/shell.h \
+    objetomovil.h
 
 
 FORMS += \

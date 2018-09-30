@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QPropertyAnimation>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -54,3 +54,23 @@ void MainWindow::on_btnDerecha_clicked()
 }
 
 
+
+void MainWindow::on_pushButton_clicked()
+{
+     ObjetoMovil obMovil;
+    if (!lista.isVacia())
+         obMovil.mover(x,y);
+    else
+        obMovil.mover(lista.getPos(lista.getTam())->getElemento().getX(),lista.getPos(lista.getTam())->getElemento().getX());
+    lista.insertarFinal(obMovil);
+    for (int i=0; lista.getTam()>i;i++)
+    {
+
+        QLabel *label = new QLabel(this);
+        label->setText("5");
+        label->setGeometry(lista.getPos(i)->getElemento().getX(),0,100,lista.getPos(i)->getElemento().getY());
+        label->show();
+    }
+
+
+}

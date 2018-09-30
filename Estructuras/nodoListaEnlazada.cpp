@@ -13,8 +13,6 @@ Nodo<G>* Nodo<G>::getSiguiente() {
 }
 template<typename G>
 G Nodo<G>::getElemento() {
-    if (this==0)
-        return 0;
     return elemento;
 }
 template<typename G>
