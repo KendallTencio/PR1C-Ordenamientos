@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QPropertyAnimation>
+#include <QtCore>
+#include <QtGui>
+#include <QGraphicsScene>
 #include "Estructuras/listaenlazada.cpp"
 #include "objetomovil.h"
 namespace Ui {
@@ -43,9 +46,10 @@ private:
     int y=60;
     bool m_flag = false;
     QList<QString>* lista_Etiquietas = new QList<QString>();
-
-    Ui::MainWindow *ui;
     void mover(int,int);
+    Ui::MainWindow *ui;
+    QGraphicsScene *scene;  //Intentando hacer una animación
+    QTimer *timer;
 };
 
 #endif // MAINWINDOW_H

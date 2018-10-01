@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QPropertyAnimation>
 #include <QPaintEvent>
 #include <QPainter>
 
@@ -12,6 +11,37 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 
     ui->setupUi(this);
+
+    scene = new QGraphicsScene(this);
+    ui->graphicsView->setRenderHint(QPainter::Antialiasing);
+
+    scene->setSceneRect(-50,50,100,100);
+    QPen myPen = QPen(Qt::red);
+
+    QLineF TopLine(scene->sceneRect().topLeft(), scene->sceneRect().topRight());
+    QLineF LeftLine(scene->sceneRect().topLeft(), scene->sceneRect().bottomLeft());
+    QLineF RightLine(scene->sceneRect().topLeft(), scene->sceneRect().bottomRight());
+    QLineF BottomLine(scene->sceneRect().bottomLeft(), scene->sceneRect().bottomRight());
+
+    scene->addLine(TopLine,myPen);
+    scene->addLine(LeftLine,myPen);
+    scene->addLine(RightLine,myPen);
+    scene->addLine(BottomLine,myPen);
+
+   // MyView view;
+
+     //   view.setScene(&scene);
+
+        //view.show();
+    /*
+
+        QMdiSubWindow *child = ui->mdiArea->addSubWindow(view);
+
+        child->setWindowTitle(tr("Multi document editor window"));
+
+        // Display window
+
+        child->show();*/
 }
 
 MainWindow::~MainWindow()
