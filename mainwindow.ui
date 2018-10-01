@@ -107,14 +107,14 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>350</y>
+      <x>210</x>
+      <y>420</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Ordenar</string>
+     <string>Rojo y Azul</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="radioButton">
@@ -293,8 +293,34 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
+      <x>300</x>
+      <y>420</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Verde</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
       <x>180</x>
-      <y>380</y>
+      <y>330</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ordenar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>370</y>
       <width>75</width>
       <height>23</height>
      </rect>

@@ -31,11 +31,19 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButton_2_clicked();
+
+    void paintEvent(QPaintEvent *event/*,int x, int y*/);
+
+    void moverObjeto();
+
 private:
 
     int x=-20;
     int y=60;
-    QList<QString> lista_Etiquietas = new QList();
+    bool m_flag = false;
+    QList<QString>* lista_Etiquietas = new QList<QString>();
+
     Ui::MainWindow *ui;
     void mover(int,int);
 };
