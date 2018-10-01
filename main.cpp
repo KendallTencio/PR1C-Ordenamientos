@@ -2,8 +2,8 @@
 #include <QApplication>
 #include <iostream>
 //#include "Ordenamientos/bubblesort.cpp"
-#include "Ordenamientos/insertion.h"
-#include "Estructuras/listaenlazada.h"
+#include "Ordenamientos/insertion.cpp"
+//#include "Estructuras/listaenlazada.h"
 
 using namespace std;
 
@@ -15,10 +15,11 @@ int main(int argc, char *argv[])
 
     ListaEnlazada<int> b;
     b.insertarCabeza(12);
-   b.insertarCabeza(7);
+    b.insertarCabeza(7);
   //  BubbleSort<int> a;
-   // InsertionSort<int> x;
-  //  x.Insertion_sort(&b);
+
+    /*InsertionSort<int> x;
+    x.Insertion_sort(&b);*/
    // cout<<b.getCabeza()->getElemento()<<endl;
 
     //a.bubble_sort(&b);/

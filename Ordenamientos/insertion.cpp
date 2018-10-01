@@ -1,6 +1,6 @@
 #include "insertion.h"
 
-#include "Estructuras/listaenlazada.cpp"
+//#include "Estructuras/listaenlazada.cpp"
 
 template <class T>
 InsertionSort<T>::InsertionSort(){
@@ -21,7 +21,7 @@ void InsertionSort<T>::Insertion_sort(T* vectorIS)
         vectorIS[j] = actual;
     }
 }*/
-/*
+
 template <class T>
 void InsertionSort<T>::Insertion_sort(ListaEnlazada<T>* listaEnlazada)
 {
@@ -35,7 +35,7 @@ void InsertionSort<T>::Insertion_sort(ListaEnlazada<T>* listaEnlazada)
         }
         listaEnlazada->insertarPos(actual.getElemento(),j);
     }
-}*/
+}
 
 template <class T>
 InsertionSort<T>::~InsertionSort()
