@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
     ListaEnlazada<int> b;
     b.insertarCabeza(12);
     b.insertarCabeza(7);
+    b.insertarCabeza(8);
   //  BubbleSort<int> a;
 
     /*InsertionSort<int> x;

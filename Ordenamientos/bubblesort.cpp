@@ -1,4 +1,5 @@
 #include "bubblesort.h"
+#include "Estructuras/listaenlazada.h"
 template <class T>
 BubbleSort<T>::BubbleSort(){
     x = 1;
@@ -56,7 +57,7 @@ void BubbleSort<T>::bubble_sort(Cola<int> pila)
     {
 
     }
-
+*/
 template <class T>
 void BubbleSort<T>::bubble_sort(ListaEnlazada<T>* listaEnlazada)
     {
@@ -80,20 +81,20 @@ void BubbleSort<T>::bubble_sort(ListaEnlazada<T>* listaEnlazada)
     }
     }
 
-
+/*
 template <class T>
 void BubbleSort<T>::bubble_sort(ListaDoblementeEnlazada<T> listaEnlazadaDoble)
     {
 
     }
-
+*/
 template <class T>
 BubbleSort<T>::~BubbleSort()
 {
 
 }
 
-*/
+
 
 
 
