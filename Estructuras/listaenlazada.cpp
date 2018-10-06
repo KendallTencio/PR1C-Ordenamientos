@@ -133,9 +133,9 @@ void ListaEnlazada<G>::EliminarPos(int pos)
     eliminar = temp->getSiguiente();
     temp->setSiguiente(eliminar->getSiguiente());
     eliminar->~Nodo();
-    tam--;
-    }
 
+    }
+    tam--;
 }
 
 

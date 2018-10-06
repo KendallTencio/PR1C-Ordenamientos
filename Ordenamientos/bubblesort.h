@@ -15,7 +15,7 @@ class BubbleSort
     //void bubble_sort(T* pila);
     //void bubble_sort(T*);
     //void bubble_sort(T*);
-    void bubble_sort(ListaEnlazada<T>* listaEnlazada);
+    Nodo<T>* bubble_sort(ListaEnlazada<T>* listaEnlazada);
 
     ~BubbleSort();
 };

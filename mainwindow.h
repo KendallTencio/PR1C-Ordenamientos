@@ -40,6 +40,8 @@ private slots:
 
     void moverObjeto();
 
+    void on_pushButton_3_clicked();
+
 private:
 
     int x=-20;
@@ -50,6 +52,7 @@ private:
     Ui::MainWindow *ui;
     QGraphicsScene *scene;  //Intentando hacer una animación
     QTimer *timer;
+    void movidaAutomatica(std::string pasos);
 };
 
 #endif // MAINWINDOW_H

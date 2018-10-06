@@ -12,8 +12,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
 
+
     scene = new QGraphicsScene(this);
-    ui->graphicsView->setRenderHint(QPainter::Antialiasing);
+
 
     scene->setSceneRect(-50,50,100,100);
     QPen myPen = QPen(Qt::red);
@@ -51,7 +52,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::mover(int _x,int _y){
     QPropertyAnimation *animation = new QPropertyAnimation(ui->label, "geometry");
-    animation->setDuration(100);
+    animation->setDuration(1000);
     animation->setStartValue(QRect(this->x, 0, 100, this->y));
     this->y +=_y;
     this->x +=_x;
@@ -59,14 +60,31 @@ void MainWindow::mover(int _x,int _y){
     animation->start();
 }
 
+void MainWindow::movidaAutomatica(string pasos)
+{
+    for(int i = 0; pasos.length()-1> i ;i++ ){
+       char lista = pasos[i];
+
+        if (lista =='U')
+            this->on_btnArriba_clicked();
+
+        if(lista == 'D')
+            this->on_btnAbajo_clicked();
+
+        if(lista == 'L')
+            this->on_btnIzquierda_clicked();
+
+        if(lista == 'R')
+          this->on_btnDerecha_clicked();
+        Sleep(1);
+    }
+}
 
 void MainWindow::on_btnArriba_clicked()
 {
     if (this->y>60)
         this->mover(0,-10);
 }
-
-
 void MainWindow::on_btnAbajo_clicked()
 {
     if (this->y<630)
@@ -136,4 +154,9 @@ void MainWindow::paintEvent(QPaintEvent *event/*,int x, int y*/)
         painter.setBrush( Qt::blue );
         painter.drawRect(10, 10, 50, 50);
     }
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    this->movidaAutomatica("LUDUDUDLL");
 }
